@@ -1,0 +1,84 @@
+.contacts-top {
+    .contacts-list {
+        .contacts-item {
+            .top {
+                display: flex;
+                margin-bottom: 10px;
+                .round-icon {
+                    margin-right: 15px;
+                }
+                .title {
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 26px;
+                    color: $colorGray;
+                }
+            }
+            .bottom {
+                p {
+                    font-weight: 500;
+                    font-size: 18px;
+                    line-height: 26px;
+                    color: $colorText;
+                    margin-bottom: 8px;
+                    margin-top: 0;
+                }
+                a {
+                    display: inline-block;
+                    font-weight: 500;
+                    font-size: 18px;
+                    line-height: 26px;
+                    color: $colorText;
+                    text-decoration: none;
+                    margin-bottom: 8px;
+                    @include desktop {
+                        &:hover {
+                            color: $colorMain;
+                        }
+                    }
+                }
+                &.bottom-clock {
+                    p {
+                        position: relative;
+                        padding-left: 70px;
+                        span {
+                            position: absolute;
+                            left: 0;
+                            top: 0;
+                        }
+                    }
+                }
+                &.bottom-phone {
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
+        }
+    }
+}
+.contacts-bottom {
+    img {
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+    }
+}
+.contacts-from__img {
+    display: inline-block;
+    width: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    &:before {
+        display: block;
+        content: '';
+        float: left;
+        padding-top: 66%;
+    }
+    @include mobile {
+        &:before {
+            padding-top: 80%;
+        }
+    }
+}

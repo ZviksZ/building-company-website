@@ -1,0 +1,43 @@
+<% var data = {
+title: "Трансгруз"
+}; %>
+<%= _.template(require('./../includes/header.html').default)(data) %>
+
+
+<div class="section no-padding">
+    <div class="container">
+        <div class="breadcrumbs">
+            <a class="item link hide-desktop" href="#"><i class="icon icon-left-arrow-1"></i></a>
+            <a class="item link hide-mobile" href="#">Главная</a>
+            <div class="item divider hide-mobile"><i class="icon icon-right-arrow"></i></div>
+            <a class="item link" href="#">Новости</a>
+            <div class="item divider hide-mobile"><i class="icon icon-right-arrow"></i></div>
+            <div class="item hide-mobile">Скоро в продаже! Новый ЖК «Академический». Рядом с парком Ю.Гагарина.</div>
+        </div>
+
+    </div>
+</div>
+<div class="section no-padding-top">
+    <div class="container">
+        <div class="margin-bottom">
+            <h1 class="h3">Скоро в продаже! Новый ЖК «Академический». Рядом с парком Ю.Гагарина.</h1>
+        </div>
+        <div class="news-promo-detail">
+            <p class="text date">03.02.2020</p>
+            <div class="main-img" style="background-image: url(./img/news1.jpg)"></div>
+            <p class="bold-text">Уважаемые дамы и господа!</p>
+            <p>
+                Скоро старт продаж объектов в ЖК "Академический". В состав ЖК войдут пять 23 - этажных секций. Жилая застройка находится на пересечении пр. Карла Маркса и ул. Советской Армии в
+                Советском районе г. Самары, в непосредственной близости от парка им. Ю.Гагарина и главной магистрали города – Московское шоссе, что обеспечит приближенность объектов к деловой и
+                культурной жизни города.
+            </p>
+            <p>
+                К продаже будут представлены 1-, 2- и 3-комнатные квартиры. На первых этажах секций будут расположены нежилые помещения с отдельными входными группами.Проектом предусмотренно строительство паркинга, в который можно спуститься на лифте не выходя из подъезда.
+            </p>
+
+            <a href="#" class="button inline">Подобрать квартиру</a>
+        </div>
+    </div>
+</div>
+
+<%= _.template(require('./../includes/footer.html').default)(data) %>

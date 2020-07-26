@@ -1,0 +1,212 @@
+<% var data = {
+title: "Трансгруз"
+}; %>
+<%= _.template(require('./../includes/header.html').default)(data) %>
+
+<div class="section no-padding">
+    <div class="container">
+        <div class="breadcrumbs">
+            <a class="item link hide-desktop" href="#"><i class="icon icon-left-arrow-1"></i></a>
+            <a class="item link hide-mobile" href="#">Главная</a>
+            <div class="item divider hide-mobile"><i class="icon icon-right-arrow"></i></div>
+            <a class="item link" href="#">Реализованные объекты</a>
+            <div class="item divider hide-mobile"><i class="icon icon-right-arrow"></i></div>
+            <div class="item hide-mobile">ул. Калужская, д.11</div>
+        </div>
+
+    </div>
+</div>
+
+<div class="section no-padding-top">
+    <div class="container">
+        <div class="caption-with-button margin-bottom">
+            <h1 class="h3 margin-bottom">ул. Калужская, д.11</h1>
+        </div>
+        <div id="ro-slider_block" class="ro-slider">
+            <div id="ro-slider" class="swiper-slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="slide" style="background-image: url('./img/residential-complex/tsentralniy.jpg');"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide" style="background-image: url('./img/residential-complex/akademicheskiy.jpg');"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide" style="background-image: url('./img/residential-complex/tsentralniy.jpg');"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide" style="background-image: url('./img/residential-complex/akademicheskiy.jpg');"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination ro-slider-pagination"></div>
+            <div class="swiper-arrow swiper-arrow-prev ro-slider-button-prev hide-mobile">
+                <i class="icon icon-left-arrow-1"></i>
+            </div>
+            <div class="swiper-arrow swiper-arrow-next ro-slider-button-next hide-mobile">
+                <i class="icon icon-right-arrow"></i>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+<div class="section no-padding-top" id="location">
+    <div class="container">
+        <h2 class="h4">Расположение</h2>
+        <div class="rc-location rc-location-big">
+            <div id="location_map_preview" class="map" data-settings='{"coords":"53.218648,50.190193"}'></div>
+        </div>
+    </div>
+</div>
+
+<section class="section no-padding-top">
+    <div class="container">
+        <div class="">
+            <div class="row">
+                <div class="col w-50">
+                    <div class="ro-info ro-info-without-icon">
+
+                        <span class="title">Этажность:</span>
+                        <p class="text">24 этажа</p>
+                    </div>
+                    <div class="ro-info ro-info-without-icon">
+
+                        <span class="title">Высота потолков:</span>
+                        <p class="text">2,7 м</p>
+                    </div>
+                    <div class="ro-info ro-info-without-icon">
+
+                        <span class="title">Отделка:</span>
+                        <p class="text">Черновая</p>
+                    </div>
+                    <div class="ro-info ro-info-without-icon">
+
+                        <span class="title">Срок сдачи:</span>
+                        <p class="text">III квартал 2017 года</p>
+                    </div>
+                </div>
+                <div class="col w-50">
+                    <div class="ro-info ro-info-without-icon">
+                        <span class="title">Материал:</span>
+                        <p class="text">Монолитный железобетонный каркас</p>
+                    </div>
+                    <div class="ro-info ro-info-without-icon">
+                        <span class="title">Электропроводка:</span>
+                        <p class="text">Установка электросчетчика, без внутриквартирной разводки.</p>
+                    </div>
+                    <div class="ro-info ro-info-without-icon">
+                        <span class="title">Особенности инженерных коммуникаций (водо-, газопровод):</span>
+                        <p class="text">Отопление-трубная разводка из сшитого полиэтилена, алюминиевые радиаторы, водопровод - стояки из стальных оцинкованных водогазопроводных труб, канализация-стояки из полиэтилена низкого давления</p>
+                    </div>
+                    <div class="ro-info ro-info-without-icon">
+                        <span class="title">Остекление:</span>
+                        <p class="text">Пластиковые окна с двухкамерными стеклопакетами</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<div class="section no-padding-top">
+    <div class="container">
+        <div class="caption">
+            <h3 class="h6">Общая информация</h3>
+        </div>
+        <p class="color-text-gray">
+            Дом построен и сдан. В продаже остались паркинги.
+        </p>
+        <p class="color-text-gray">
+            Географически удобное расположение обеспечивается наличием рядом двух основных магистралей города - Московского шоссе и ул. Ново-Садовой.
+        </p>
+        <p class="color-text-gray">
+            Вблизи сосредоточено немало образовательных и спортивных учреждений, среди которых  Самарский национальный исследовательский университет им. Академика С.П.Королева, средняя общеобразовательная школа № 58, детская школа искусств №17, большой спортивный комплекс и бассейн СамГТУ, Самарский областной детский эколого-биологический центр.
+            Рядом  с  домом расположен памятник природы регионального значения - Ботанический сад, где новоселы смогут совершать прогулки.
+        </p>
+        <p class="color-text-gray">
+            Проектом предусматривается строительство 24-этажного 3-х  секционного жилого дома с двухэтажным подземным паркингом. Выезд из паркинга запроектирован на ул. Калужская.
+            В комплексе запроектировано 505  квартир площадью от 48,0 до 109,0 кв. метров. Набор квартир представлен 1, 2, 3, 4 - комнатными.
+        </p>
+        <p class="color-text-gray">
+            Каждая секция оборудована 2 лифтами.
+        </p>
+        <p class="color-text-gray">
+            Жилые секции имеют свой собственный автономный источник теплоснабжения - крышную котельную, расположенную на покрытии секции №2.
+        </p>
+        <p class="color-text-gray">
+            Благоустройство территории будет представлено  устройством автомобильных проездов, тротуаров, озеленением прилегающей территории. На эксплуатируемой кровле паркинга расположатся  детские игровые, спортивные и хозяйственные площадки, площадки для отдыха населения, малые архитектурные формы.
+        </p>
+    </div>
+</div>
+
+
+<div class="section gray" id="documents">
+    <div class="container">
+        <h2 class="h4">Документы</h2>
+        <p class="medium bold">Проектная декларация</p>
+
+        <div class="documents">
+            <a href="#" class="item" target="_blank">
+                Проектная декларация от 09.12.2016г.
+                Проектная декларация от 09.12.2016г.
+                <i class="icon icon-paper"></i>
+            </a>
+            <a href="#" class="item" target="_blank">
+                Изменение в проектную декларацию от 12.07.2018г.
+                <i class="icon icon-paper"></i>
+            </a>
+        </div>
+
+        <a href="#" class="button inline small margin-top" data-show_more_button="documents" type="button">Показать больше</a>
+
+        <div data-show_more="documents" class="hide">
+            <span></span>
+            <p class="medium bold">Разрешение на строительство</p>
+            <div class="documents">
+                <a href="#" class="item" target="_blank">
+                    Разрешение на строительство от 09.12.2016г.
+                    <i class="icon icon-paper"></i>
+                </a>
+                <a href="#" class="item" target="_blank">
+                    Разрешение на строительство от 09.12.2016г.
+                    <i class="icon icon-paper"></i>
+                </a>
+                <a href="#" class="item" target="_blank">
+                    Положительное заключение негосударственной экспертизы от негосударственной заключение негосударственной экспертизы от 20.08.2019г.
+                    <i class="icon icon-paper"></i>
+                </a>
+            </div>
+            <div class="documents">
+                <a href="#" class="item" target="_blank">
+                    Разрешение на строительство от 09.12.2016г.
+                    <i class="icon icon-paper"></i>
+                </a>
+                <a href="#" class="item" target="_blank">
+                    Разрешение на строительство от 09.12.2016г.
+                    <i class="icon icon-paper"></i>
+                </a>
+            </div>
+            <p class="medium bold">Договор долевого участия</p>
+            <div class="documents">
+                <a href="#" class="item" target="_blank">
+                    Договор долевого участия от 09.12.2016г.
+                    <i class="icon icon-paper"></i>
+                </a>
+                <a href="#" class="item" target="_blank">
+                    Договор долевого участия от 09.12.2016г.
+                    <i class="icon icon-paper"></i>
+                </a>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<%= _.template(require('./../includes/footer.html').default)(data) %>

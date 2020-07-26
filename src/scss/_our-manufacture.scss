@@ -1,0 +1,103 @@
+.our-manufacture {
+    position: relative;
+    z-index: 3;
+    margin: 0;
+    padding: 0;
+    background: transparent;
+
+    .photo {
+        display: block;
+        position: absolute;
+        z-index: 3;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 25%;
+        background-position: center center;
+        background-size: cover;
+        opacity: 0;
+        transform: translateX(-100%);
+        transition: all 1s ease-out;
+
+        @include mobile {
+            position: relative;
+            left: auto;
+            top: auto;
+            bottom: auto;
+            margin: 0;
+            width: 100%;
+            overflow: hidden;
+
+            &:before {
+                content: "";
+                display: block;
+                float: left;
+                margin: 0;
+                padding-top: 61%;
+            }
+        }
+    }
+
+    .stripe {
+        display: block;
+        position: absolute;
+        z-index: 1;
+        top: 30px;
+        bottom: 30px;
+        left: 0;
+        width: 100%;
+        background: $colorGrayLight;
+        transform: translateX(100%);
+        opacity: 0;
+        transition: all 1s ease-out;
+
+        @include mobile {
+            top: 0;
+            bottom: 0;
+        }
+    }
+
+    .animate-text {
+        transform: translateX(50%);
+        opacity: 0;
+        transition: all 1s ease-out;
+    }
+
+    .content {
+        position: relative;
+        z-index: 3;
+        margin: 0 0 0 50%;
+        padding: 80px 0 80px 80px;
+
+        @include mobile {
+            margin-left: 0;
+            padding: 30px 0;
+        }
+
+        @include desktop-small {
+            padding: 50px 0 50px 50px;
+        }
+    }
+
+    &.visible {
+        .photo {
+            width: 50%;
+            transform: translateX(0);
+            opacity: 1;
+
+            @include mobile {
+                width: 100%;
+            }
+        }
+
+        .stripe {
+            transform: translateX(0);
+            opacity: 1;
+        }
+
+        .animate-text {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+}

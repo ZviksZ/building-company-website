@@ -1,0 +1,138 @@
+<% var data = {
+title: "Трансгруз"
+}; %>
+<%= _.template(require('./../includes/header.html').default)(data) %>
+
+<div class="section no-padding">
+    <div class="container">
+        <div class="breadcrumbs">
+            <a class="item link hide-desktop" href="#"><i class="icon icon-left-arrow-1"></i></a>
+            <a class="item link hide-mobile" href="#">Главная</a>
+            <div class="item divider hide-mobile"><i class="icon icon-right-arrow"></i></div>
+            <a class="item link hide-mobile" href="#">Квартиры в строящихся домах</a>
+            <div class="item divider hide-mobile"><i class="icon icon-right-arrow"></i></div>
+            <a class="item link hide-mobile" href="#">ЖК «Академический»</a>
+            <div class="item divider hide-mobile"><i class="icon icon-right-arrow"></i></div>
+            <a class="item link" href="#">Секция 2</a>
+            <div class="item divider hide-mobile"><i class="icon icon-right-arrow"></i></div>
+            <div class="item hide-mobile">Двухкомнатная №248</div>
+        </div>
+    </div>
+</div>
+
+<div class="section no-padding">
+    <div class="container">
+        <div class="rc-about-project">
+            <div class="info">
+                <h1 class="h3 no-margin-bottom">Двухкомнатная №248</h1>
+                <div class="apartments-deadline">Срок сдачи: IV кв. 2021 г.</div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<div class="section no-padding-top">
+    <div class="container">
+        <div class="apartment-view">
+            <div class="apartment-image">
+                <div class="image-wrapper">
+                    <img src="./img/apartments/66,1.png" alt="">
+                </div>
+            </div>
+            <div class="apartment-info">
+                <div class="compass-wrap hide-desktop">
+                    <div class="compass" data-deg="190" >
+                        <div class="compass-symbol north">С</div>
+                        <div class="compass-symbol south">Ю</div>
+                        <div class="compass-symbol west">З</div>
+                        <div class="compass-symbol east">В</div>
+                    </div>
+                </div>
+                <div class="full-price">3 645 000 ₽</div>
+                <div class="item">
+                    <div class="name">Общая площадь</div>
+                    <div class="value">67,55 м<sup>2</sup></div>
+                </div>
+                <div class="item">
+                    <div class="name">Цена за м<sup>2</sup> </div>
+                    <div class="value">54 000 ₽</div>
+                </div>
+                <div class="item">
+                    <div class="name">Этаж</div>
+                    <div class="value">14</div>
+                </div>
+                <div class="item">
+                    <div class="name">Секция</div>
+                    <div class="value">2</div>
+                </div>
+                <div class="buttons">
+                    <a href="#" class="button no-margin-bottom"
+                       data-open-modal-button="reserve_modal"
+                       data-effect-type="open-modal-fade-effect">Оставить
+                        заявку</a>
+                    <div class="button small tertiary">Скачать PDF</div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="section no-padding-top">
+    <div class="container">
+        <div class="apartment-plans">
+            <div class="row">
+                <div class="col w-50">
+                    <div class="item-heading">На плане 14 этажa</div>
+                    <div class="item" id="apartment_view">
+                        <div id="rc_sections_drawing" class="drawing" data-drawing="" data-image="./img/apartments/6-8floor.png"
+                             data-items='[
+     {
+    "id": "2",
+    "name": "№195",
+    "nameType": "Двухкомнатная",
+    "nameTypeShort": "д.",
+    "deadline": "I квартал 2021 г.",
+    "position": {
+      "left": "27",
+      "top": "57"
+    },
+    "coords": "486.2303772,1146.1192627 380.1335449,1584.1307373 509.9314575,1622.7728271 509.9314575,1800 1145.0494385,1800 1145.0494385,1574.2225342 1337.2692871,1574.2225342 1337.2692871,1254.1864014 1275.8381348,1254.1864014 1246.1134033,1147.1774902 961.7470703,1222.1497803 961.7470703,1237.6727295 770.1878052,1237.6727295 770.1878052,1223.4709473",
+    "href": "#url2",
+    "image": "./img/commercial/apartment.png",
+    "area": "64,54",
+    "items": {
+        "rent": {
+            "price": "45 000"
+        }
+    }
+  }
+]
+'></div>
+                    </div>
+                </div>
+                <div class="col w-50">
+                    <div class="item-heading">На плане комплекса</div>
+                    <div class="item item-with-compass">
+                        <div class="compass-wrap">
+                            <div class="compass" data-deg="190" >
+                                <div class="compass-symbol north">С</div>
+                                <div class="compass-symbol south">Ю</div>
+                                <div class="compass-symbol west">З</div>
+                                <div class="compass-symbol east">В</div>
+                            </div>
+                        </div>
+                        <div class="preview">
+                            <img src="./img/apartments/section-plan.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<%= _.template(require('./../includes/footer.html').default)(data) %>

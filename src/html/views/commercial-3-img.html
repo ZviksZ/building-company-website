@@ -1,0 +1,56 @@
+<% var data = {
+title: "Трансгруз"
+}; %>
+<%= _.template(require('./../includes/header.html').default)(data) %>
+
+<div class="section no-padding">
+    <div class="container">
+        <div class="breadcrumbs">
+            <a class="item link hide-desktop" href="#"><i class="icon icon-left-arrow-1"></i></a>
+            <a class="item link hide-mobile" href="#">Главная</a>
+            <div class="item divider hide-mobile"><i class="icon icon-right-arrow"></i></div>
+            <a class="item link hide-mobile" href="#">Коммерческая недвижиммость</a>
+            <div class="item divider hide-mobile"><i class="icon icon-right-arrow"></i></div>
+            <a class="item link" href="#">ЖК «Академический»</a>
+            <div class="item divider hide-mobile"><i class="icon icon-right-arrow"></i></div>
+            <div class="item hide-mobile">Секция 2</div>
+        </div>
+
+    </div>
+</div>
+<div class="section no-padding margin-bottom-x4">
+    <div class="container">
+        <div class="commercial-section">
+            <div class="cs_head">
+                <div class="caption">
+                    <h1 class="h3">Секция 2</h1>
+                    <p class="cs_subtitle">Срок сдачи: IV кв. 2021 г.</p>
+                </div>
+                <div class="cs_info">
+                    <div class="compass-wrap">
+                        <div class="compass" data-deg="127" style="transform: rotate(127deg)">
+                            <div class="compass-symbol north" style="transform: rotate(-127deg)">С</div>
+                            <div class="compass-symbol south" style="transform: rotate(-127deg)">Ю</div>
+                            <div class="compass-symbol west" style="transform: rotate(-127deg)">З</div>
+                            <div class="compass-symbol east" style="transform: rotate(-127deg)">В</div>
+                        </div>
+                    </div>
+                    <div class="section_colors">
+                        <div class="s_color s_color-green">В продаже</div>
+                        <div class="s_color">Продано</div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="commercial-image">
+                <img src="http://test.sktransgruz.ru/netcat_files/191/348/7s1.png" alt="">
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+
+<%= _.template(require('./../includes/footer.html').default)(data) %>

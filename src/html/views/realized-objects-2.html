@@ -1,0 +1,182 @@
+<% var data = {
+title: "Трансгруз"
+}; %>
+<%= _.template(require('./../includes/header.html').default)(data) %>
+
+<div class="section no-padding">
+    <div class="container">
+        <div class="breadcrumbs">
+            <a class="item link hide-desktop" href="#"><i class="icon icon-left-arrow-1"></i></a>
+            <a class="item link hide-mobile" href="#">Главная</a>
+            <div class="item divider hide-mobile"><i class="icon icon-right-arrow"></i></div>
+            <a class="item link" href="#">Реализованные объекты</a>
+            <div class="item divider hide-mobile"><i class="icon icon-right-arrow"></i></div>
+            <div class="item hide-mobile">ЖК «Ботанический»</div>
+        </div>
+
+    </div>
+</div>
+
+<div class="section no-padding-top">
+    <div class="container">
+        <div class="caption-with-button margin-bottom">
+            <h1 class="h3 margin-bottom">ЖК «Ботанический»</h1>
+        </div>
+        <div id="ro-slider_block" class="ro-slider">
+            <div id="ro-slider" class="swiper-slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="slide" style="background-image: url('./img/residential-complex/tsentralniy.jpg');"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide" style="background-image: url('./img/residential-complex/akademicheskiy.jpg');"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide" style="background-image: url('./img/residential-complex/tsentralniy.jpg');"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide" style="background-image: url('./img/residential-complex/akademicheskiy.jpg');"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination ro-slider-pagination"></div>
+            <div class="swiper-arrow swiper-arrow-prev ro-slider-button-prev hide-mobile">
+                <i class="icon icon-left-arrow-1"></i>
+            </div>
+            <div class="swiper-arrow swiper-arrow-next ro-slider-button-next hide-mobile">
+                <i class="icon icon-right-arrow"></i>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<div class="section padding-top no-padding-bottom">
+    <div class="container">
+        <div class="caption-with-button margin-bottom">
+            <h1 class="h4 margin-bottom">Объекты в составе ЖК «Ботанический» </h1>
+        </div>
+        <div class="ro-cards ro-cards__noscroll margin-top count-3">
+            <div class="item effect-white">
+                <div class="content ">
+                    <div class="bg lazy" data-src="./img/ro/1.png" style="background-image: url('./img/ro/1.png')"></div>
+                    <div class="inner">
+                        <div class="top">
+                            <div class="name">ЖК «Центральный»</div>
+                             <a href="" class="text-red" download>
+                                Разрешение на ввод объекта в эксплуатацию от 21.08.2015г.
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="effect-stripe"></div>
+            </div>
+            <div class="item effect-white ">
+                <div class="content  ">
+                    <div class="bg lazy" data-src="./img/ro/2.jpg" style="background-image: url('./img/ro/2.jpg')"></div>
+                    <div class="inner">
+                        <div class="top">
+                            <div class="name">ЖК «Академический»</div>
+                             <a href="" class="text-red" download>
+                                Разрешение на ввод объекта в эксплуатацию от 21.08.2015г.
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="effect-stripe "></div>
+            </div>
+            <div class="item effect-white ">
+                <div class="content  ">
+                    <div class="bg lazy" data-src="./img/ro/3.jpg" style="background-image: url('./img/ro/3.jpg')"></div>
+                    <div class="inner">
+                        <div class="top">
+                            <div class="name">ЖК «120 квартал»</div>
+                             <a href="" class="text-red" download>
+                                Разрешение на ввод объекта в эксплуатацию от 21.08.2015г.
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="effect-stripe "></div>
+            </div>
+
+            <div class="item effect-white">
+                <div class="content  ">
+                    <div class="bg lazy" data-src="./img/ro/1.png" style="background-image: url('./img/ro/1.png')"></div>
+                    <div class="inner">
+                        <div class="top">
+                            <div class="name">ЖК «Центральный»</div>
+                             <a href="" class="text-red" download>
+                                Разрешение на ввод объекта в эксплуатацию от 21.08.2015г.
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="effect-stripe "></div>
+            </div>
+            <div class="item effect-white delay-200">
+                <div class="content  ">
+                    <div class="bg lazy" data-src="./img/ro/2.jpg" style="background-image: url('./img/ro/2.jpg')"></div>
+                    <div class="inner">
+                        <div class="top">
+                            <div class="name">ЖК «Академический»</div>
+                             <a href="" class="text-red" download>
+                                Разрешение на ввод объекта в эксплуатацию от 21.08.2015г.
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="effect-stripe "></div>
+            </div>
+            <div  class="item effect-white delay-400">
+                <div class="content  ">
+                    <div class="bg lazy" data-src="./img/ro/3.jpg" style="background-image: url('./img/ro/3.jpg')"></div>
+                    <div class="inner">
+                        <div class="top">
+                            <div class="name">ЖК «120 квартал»</div>
+                            <a href="" class="text-red" download>
+                                Разрешение на ввод объекта в эксплуатацию от 21.08.2015г.
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="effect-stripe "></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="section" id="location">
+    <div class="container">
+        <h2 class="h4">Расположение</h2>
+        <div class="rc-location rc-location-big">
+            <div id="location_map_preview" class="map" data-settings='{"coords":"53.218648,50.190193"}'></div>
+        </div>
+    </div>
+</div>
+
+<div class="section no-padding-top">
+    <div class="container">
+        <p class="color-text-gray">
+            Объект расположен в историческом районе города, недалеко от пл. Куйбышева, в границах улиц Садовая, Вилоновская. Представляет собой трёхсекционный жилой дом переменной этажности со
+            встроено-пристроенными помещениями, а также подземно надземным паркингом. Его преимуществом является развитая инфраструктура,включающая в себя школу, детский сад, институт, объекты
+            здравоохранения,фитнес клубы, рестораны, рынок. На прилегающих территориях находится крупный торговый центр и театр.А соседство с парком,подарит вам возможность, проводить незабываемые
+            прогулки. <br>
+            Жилые секции имеют свой собственный автономный источник теплоснабжения — крышную котельную. Благодаря принятым техническим решениям у обладателей квартир в новом доме, не будет проблем отключением теплой воды в летний период, на время ремонтных работ коммунальных служб, а также с подачей тепла в отопительный период.
+            <br>После ввода объекта в эксплуатацию обслуживание жилого комплекса будет осуществлять управляющая компания, которая круглосуточно будет содержать прилегающую территорию домов и подъездов, в чистоте и порядке. Заключив договор на тех. обслуживание с данной организацией, Вы можете рассчитывать на оперативную помощь в решении любой проблемы, а также будете иметь возможность оплачивать коммунальные услуги в самой компании, что значительно сэкономит Ваше время.
+            <br>В жилом доме предусмотрены однокомнатные (от 41-60 кв.м.), двухкомнатные (60-103 кв.м.), трехкомнатные квартиры (101-124 кв.м.), четырёхкомнатные (188-256) и семикомнатная квартиры (375 кв.м). Существует возможность объединения квартир Проект отличает не только гармоничное архитектурное решение, но и качество внутреннего наполнения. Большие и светлые квартиры – все подчинено логике жилья, полностью соответствующего мировым стандартам. Современные технологии звукоизоляции и качественные материалы позволят воплотить самые интересные дизайнерские и функциональные решения. Первые этажи, согласно проекта, занимают помещения различного социально-бытового назначения, что как нельзя лучше обеспечит Вам комфорт и удобство.
+            <br>В жилом доме продумано все до мелочей, а современные материалы и технологии обеспечат комфорт и безопасность проживания.
+            <br>Ввод объекта в эксплуатацию намечен на IV квартал 2014 г.
+            <br>Застройщиком является ООО "Специализированный застройщик "Трансгруз".
+            <br>Заключается договор участия в долевом строительстве и регистрируется в Управлении Федеральной службы государственной регистрации, кадастра и картографии по Самарской области.
+            <br>С Проектной декларацией по объекту можно ознакомиться в офисе, расположенном по адресу: г. Самара, Самарский р-н, ул. Водников, 60, оф.2
+        </p>
+    </div>
+</div>
+
+<%= _.template(require('./../includes/footer.html').default)(data) %>

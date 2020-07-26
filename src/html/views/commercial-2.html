@@ -1,0 +1,165 @@
+<% var data = {
+title: "Трансгруз"
+}; %>
+<%= _.template(require('./../includes/header.html').default)(data) %>
+
+<div class="section fullscreen-with-submenu no-padding-vertical">
+    <div class="rc-main" style="background-image: url('./img/residential-complex/tsentralniy-blur.jpg');">
+        <div class="bg" style="background-image: url('./img/residential-complex/tsentralniy.jpg')"></div>
+
+        <div class="content inner">
+            <div class="container">
+                <div class="breadcrumbs color-white">
+                    <a class="item link hide-desktop" href="#"><i class="icon icon-left-arrow-1"></i></a>
+                    <a class="item link hide-mobile" href="#">Главная</a>
+                    <div class="item divider hide-mobile"><i class="icon icon-right-arrow"></i></div>
+                    <a class="item link" href="#">Квартиры в новостройках</a>
+                    <div class="item divider hide-mobile"><i class="icon icon-right-arrow"></i></div>
+                    <div class="item hide-mobile">ЖК «Центральный»</div>
+                </div>
+
+                <h1 class="text name">ЖК «Центральный»</h1>
+                <p class="text address">
+                    <span class="round-icon">
+                        <i class="icon icon-map"></i>
+                    </span>
+                    Московское шоссе / ул. Авроры
+                </p>
+                <p class="text">Срок сдачи:</p>
+                <p class="text deadline">IV кв. 2021 г.</p>
+                <p class="text">Очередь 17</p>
+            </div>
+        </div>
+        <div class="content bottom">
+            <div class="container">
+                <a href="#rc_sections-commercial" class="button inline">Выбрать помещение</a>
+                <a href="#" class="button secondary inline">Паркинги</a>
+                <a href="#" class="button secondary inline">Офисы</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="section" id="about">
+    <div class="container">
+        <div class="rc-about-project">
+            <div class="info">
+                <h2 class="h4">О проекте</h2>
+                <p class="color-text-gray">Жилой комплекс "Центральный" находится в Октябрьском районе г. Самара. Комплекс представляет собой многоэтажную застройку, строящуюся по индивидуальному проекту. Жилой комплекс "Центральный" находится в Октябрьском районе г. Самара.</p>
+                <a href="#" class="button inline small no-margin-top" data-open-modal-button="about_project">Подробнее</a>
+            </div>
+            <div class="video">
+                <video autoplay id="video" controls loop muted src="./img/test-video.mp4"></video>
+
+                <div class="video-controls">
+                    <button id="playpause" class="button inline" title="play">
+                        <img src="./img/play-and-pause-button.svg" alt="play-pause">
+                    </button>
+                    <button id="fullscreen" class="button inline" type="button">
+                        <i class="icon-fullscreen"></i>
+                    </button>
+                </div>
+
+                <!--<img src="./img/test-photo.png" alt="">-->
+            </div>
+        </div>
+    </div>
+</div>
+
+<hr>
+
+<div class="section" id="location">
+    <div class="container">
+        <h2 class="h4">Расположение</h2>
+        <div class="rc-location">
+            <div id="location_map_preview" class="map" data-settings='{"coords":"53.218648,50.190193"}'></div>
+            <div class="buttons">
+                <a href="" class="button inline small open-modal-button" data-open-modal-button="location_map">Инфраструктура</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="section no-padding-vertical no-margin-bottom" id="apartments">
+    <div id="rc_sections-commercial" class="rc-sections">
+        <div class="drawing-block" data-drawing_block>
+
+            <div class="apartments-content">
+                <div class="container">
+                    <h2 class="text caption">Выбор помещения</h2>
+                </div>
+            </div>
+            <div id="rc_sections_drawing" class="drawing" data-drawing="" data-image="./img/tsentralniy-section.jpg" data-items='[
+  {
+    "id": "1",
+    "name": "17",
+    "nameType": "Секция",
+    "nameTypeShort": "с.",
+    "deadline": "I квартал 2021 г.",
+    "position": {
+      "left": "27",
+      "top": "57"
+    },
+    "coords": "538.3336182,759.1207275 538.3336182,708.2584839 543.617981,699.6713257 552.8656616,690.423645 560.1317139,685.7998047 646.6636963,672.5888062 671.7645264,672.5888062 704.1314697,615.1210327 714.7002563,599.9284058 727.9111938,593.322937 741.1221924,593.322937 825.0119629,593.322937 865.9660034,612.4788208 848.1311646,651.4512329 826.3330078,676.2218018 828.9752197,689.1025391 827.6541138,702.3135376 826.3330078,711.5612183 837.5623779,727.4143677 848.1311646,730.0565796 852.0944214,737.3226318 853.4155273,749.2125244 859.3604736,759.1207275 861.3421631,774.3133545 854.0761108,784.2216187 765.5625,839.0471802 719.9846191,866.1296997 702.1497803,832.4417114 686.2966309,819.8912354 672.885437,793.6279907 656.7008057,776.9899902 635.4343262,768.3684082 574.6638184,768.3684082",
+    "href": "#url1",
+    "type": "sale",
+    "place": {
+        "price": "2.6",
+        "count": "4",
+        "area": "45.45"
+    }
+  },
+  {
+    "id": "2",
+    "name": "13",
+    "nameType": "Секция",
+    "nameTypeShort": "с.",
+    "deadline": "сдана в 2018",
+    "position": {
+      "left": "35",
+      "top": "35"
+    },
+    "coords": "826.9935913,534.5340576 826.9935913,465.8369446 860.6815796,465.8369446 860.6815796,460.5525513 880.4980469,460.5525513 880.4980469,448.6626587 919.470459,448.6626587 919.470459,458.5708923 973.635498,458.5708923 973.635498,534.5340576 947.213501,534.5340576 947.213501,539.8184204 910.8833008,539.8184204 910.8833008,535.1945801 890.406311,535.1945801 890.406311,539.8184204 856.7182617,539.8184204 856.7182617,533.2129517",
+    "href": "#url2",
+    "type": "rent",
+    "place": {
+        "price": "2.6",
+        "count": "4",
+        "area": "45.45"
+    }
+  },
+  {
+    "id": "3",
+    "name": "12",
+    "nameType": "Секция",
+    "nameTypeShort": "с.",
+    "deadline": "сдана в 2016",
+    "position": {
+      "left": "41",
+      "top": "35"
+    },
+    "coords": "973.635498,458.5708923 973.635498,534.5340576 1000.0574341,534.5340576 1000.0574341,539.8184204 1031.7637939,539.8184204 1031.7637939,533.8734741 1054.8830566,533.8734741 1054.8830566,539.8184204 1087.9105225,539.8184204 1087.9105225,535.8551636 1115.6535645,535.8551636 1115.6535645,467.15802 1085.2683105,467.15802 1085.2683105,458.5708923 1063.4702148,458.5708923 1063.4702148,448.6626587 1023.1766968,448.6626587 1023.1766968,459.8919983",
+    "href": "#url3",
+    "type": "sale",
+    "place": {
+        "price": "2.6",
+        "count": "4",
+        "area": "45.45"
+    }
+  }
+]
+'></div>
+        </div>
+        <div class="move-button hide-desktop" data-move_button>
+            <i class="icon icon-move"></i>
+            Перемещайте генплан
+        </div>
+    </div>
+</div>
+
+
+
+
+<%= _.template(require('./../includes/footer.html').default)(data) %>

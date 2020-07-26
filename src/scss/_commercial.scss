@@ -1,0 +1,86 @@
+.commercial-section {
+    position: relative;
+    .commercial-image {
+        img {
+            width: 100%;
+            height: auto;
+            max-width: 100%;
+        }
+    }
+    .cs-sections {
+        background: $colorWhite;
+        @include mobile {
+            .drawing-block {
+                height: auto;
+                overflow-x: hidden;
+                margin-left: -17px;
+                margin-right: -17px;
+                .drawing {
+                    width: 100% !important;
+                    height: auto!important;
+                }
+            }
+            .move-button {
+                display: none;
+            }
+        }
+    }
+    .cs_head {
+        display: flex;
+        .cs_info {
+            display: flex;
+            align-items: center;
+            margin-left: auto;
+            .compass-wrap {
+                margin-right: 50px;
+            }
+        }
+    }
+    .cs_subtitle {
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 26px;
+        color: $colorMain;
+        margin: 0;
+    }
+    @include mobile {
+        padding-bottom: 100px;
+        .cs_subtitle {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 26px;
+            color: $colorGray;
+        }
+        .cs_head {
+            .h3 {
+                margin-bottom: 10px;
+            }
+            .cs_info {
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                width: 100%;
+                flex-direction: row-reverse;
+                justify-content: space-between;
+                .compass-wrap {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+    @include only-mobile {
+        .rc_sections_tabs {
+            justify-content: space-between;
+            .rc_tab {
+                width: 48%;
+                margin-right: 0;
+                border: 2px solid $colorMain;
+                &:not(last-child) {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}
+
+

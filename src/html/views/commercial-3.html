@@ -1,0 +1,113 @@
+<% var data = {
+title: "Трансгруз"
+}; %>
+<%= _.template(require('./../includes/header.html').default)(data) %>
+
+<div class="section no-padding">
+    <div class="container">
+        <div class="breadcrumbs">
+            <a class="item link hide-desktop" href="#"><i class="icon icon-left-arrow-1"></i></a>
+            <a class="item link hide-mobile" href="#">Главная</a>
+            <div class="item divider hide-mobile"><i class="icon icon-right-arrow"></i></div>
+            <a class="item link hide-mobile" href="#">Коммерческая недвижиммость</a>
+            <div class="item divider hide-mobile"><i class="icon icon-right-arrow"></i></div>
+            <a class="item link" href="#">ЖК «Академический»</a>
+            <div class="item divider hide-mobile"><i class="icon icon-right-arrow"></i></div>
+            <div class="item hide-mobile">Секция 2</div>
+        </div>
+
+    </div>
+</div>
+<div class="section no-padding margin-bottom-x4">
+    <div class="container">
+        <div class="commercial-section">
+            <div class="cs_head">
+                <div class="caption">
+                    <h1 class="h3">Секция 2</h1>
+                    <p class="cs_subtitle">Срок сдачи: IV кв. 2021 г.</p>
+                </div>
+                <div class="cs_info">
+                    <div class="compass-wrap">
+                        <div class="compass" data-deg="127" style="transform: rotate(127deg)">
+                            <div class="compass-symbol north" style="transform: rotate(-127deg)">С</div>
+                            <div class="compass-symbol south" style="transform: rotate(-127deg)">Ю</div>
+                            <div class="compass-symbol west" style="transform: rotate(-127deg)">З</div>
+                            <div class="compass-symbol east" style="transform: rotate(-127deg)">В</div>
+                        </div>
+                    </div>
+                    <div class="section_colors">
+                        <div class="s_color s_color-green">В продаже</div>
+                        <div class="s_color">Продано</div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="commercial-apartments" class="rc-sections cs-sections">
+                <div class="drawing-block" data-drawing_block>
+                    <div id="rc_sections_drawing" class="drawing" data-drawing="" data-image="./img/commercial/plan.png" data-items='[
+  {
+    "id": "1",
+    "name": "№194",
+    "nameType": "Помещение",
+    "nameTypeShort": "п.",
+    "deadline": "I квартал 2021 г.",
+    "position": {
+      "left": "27",
+      "top": "57"
+    },
+    "coords": "122,428 122,161 462,161 462,290 500,290 500,491 357,491 357,424",
+    "href": "#url1",
+    "image": "./img/commercial/apartment.png",
+    "area": "64,54",
+    "type": "sale",
+    "price": "3 645 000"
+  },
+   {
+    "id": "2",
+    "name": "№195",
+    "nameType": "Помещение",
+    "nameTypeShort": "п.",
+    "deadline": "I квартал 2021 г.",
+    "position": {
+      "left": "27",
+      "top": "57"
+    },
+    "coords": "1509,144 1275,144 1275,384 1212,384 1212,455 1646,455 1646,447 1654,447 1654,205 1510,205",
+    "href": "#url2",
+    "image": "./img/commercial/apartment.png",
+    "area": "64,54",
+    "type": "rent",
+    "price": "45 000"
+  },
+   {
+    "id": "3",
+    "name": "№196",
+    "nameType": "Помещение",
+    "nameTypeShort": "п.",
+    "deadline": "I квартал 2021 г.",
+    "position": {
+      "left": "27",
+      "top": "57"
+    },
+    "coords": "500,398.141571 787,398.141571 787,643 631,643 631,549 490,549 490,491 500,491",
+    "href": "#url3",
+    "image": "./img/commercial/apartment.png",
+    "area": "64,54",
+    "type": "sale",
+    "price": "3 645 000"
+  }
+]
+'></div>
+                </div>
+                <div class="move-button hide-desktop" data-move_button>
+                    <i class="icon icon-move"></i>
+                    Перемещайте план
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<%= _.template(require('./../includes/footer.html').default)(data) %>

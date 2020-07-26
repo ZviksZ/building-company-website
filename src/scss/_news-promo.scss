@@ -1,0 +1,128 @@
+.news-promo-cards {
+    display: block;
+    margin: 0;
+    padding: 0;
+    .item {
+        display: block;
+        margin: 12px 0;
+        background: #fff;
+        text-decoration: none;
+        border-radius: 12px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.07);
+        overflow: hidden;
+        transition: transform .2s ease;
+
+        .img {
+            display: block;
+            margin: 0;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            overflow: hidden;
+
+            &:before {
+                content: "";
+                display: block;
+                margin: 0;
+                float: left;
+                padding-top: 62%;
+
+                @include mobile {
+                    padding-top: 48%;
+                }
+            }
+        }
+
+        .info {
+            display: block;
+            margin: 0;
+            padding: 20px;
+            height: 230px;
+            overflow: hidden;
+
+            @include desktop-small {
+                padding: 15px;
+            }
+
+            @include mobile {
+                padding: 12px 15px;
+                height: auto;
+            }
+        }
+
+        .text {
+            display: block;
+            margin: 0;
+            font-size: 18px;
+            line-height: 26px;
+            font-weight: 700;
+            color: $colorText;
+
+            &.date {
+                margin-bottom: 6px;
+                color: $colorGray;
+                font-size: 12px;
+                line-height: 1.2em;
+                font-weight: 500;
+            }
+
+            @include desktop-small {
+                font-size: 14px;
+                line-height: 1.5em;
+            }
+        }
+
+        @include desktop {
+            &:hover {
+                transform: translateY(-5px);
+            }
+        }
+    }
+}
+
+.news-promo-detail {
+    .main-img {
+        width: 100%;
+        display: inline-block;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        &:before {
+            content: "";
+            display: block;
+            float: left;
+            padding-top: 600px;
+        }
+        @media screen and (max-width: 910px) {
+            &:before {
+                content: "";
+                display: block;
+                float: left;
+                padding-top: 66%;
+            }
+        }
+    }
+    //p {
+    //    font-weight: 500;
+    //    font-size: 18px;
+    //    line-height: 34px;
+    //    color: $colorText;
+    //    margin: 10px 0;
+    //    &.bold-text {
+    //        font-weight: 700;
+    //    }
+    //    &.date {
+    //        font-weight: 500;
+    //        font-size: 12px;
+    //        line-height: 26px;
+    //        color: $colorGray;
+    //    }
+    //    @include tablet-mobile {
+    //        font-size: 14px;
+    //        &.bold-text {
+    //            font-size: 14px;
+    //            font-weight: 700;
+    //        }
+    //    }
+    //}
+}

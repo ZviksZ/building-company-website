@@ -1,0 +1,126 @@
+<% var data = {
+title: "Трансгруз"
+}; %>
+<%= _.template(require('./../includes/header.html').default)(data) %>
+
+<div class="section no-padding">
+    <div class="container">
+        <div class="breadcrumbs">
+            <a class="item link hide-desktop" href="#"><i class="icon icon-left-arrow-1"></i></a>
+            <a class="item link hide-mobile" href="#">Главная</a>
+            <div class="item divider hide-mobile"><i class="icon icon-right-arrow"></i></div>
+            <a class="item link" href="#">Гаражи и паркинги</a>
+            <div class="item divider hide-mobile"><i class="icon icon-right-arrow"></i></div>
+            <div class="item hide-mobile">ЖК «Академический»</div>
+        </div>
+
+    </div>
+</div>
+<div class="section no-padding margin-bottom-x4">
+    <div class="container">
+        <div class="parking-section">
+            <div class="ps_head">
+                <div class="caption margin-bottom-x2">
+                    <h1 class="h3">ЖК «Академический»</h1>
+                </div>
+            </div>
+
+            <div class="ps-mobile hide-desktop">
+                <div class="ps-mobile_subtitle">Описание</div>
+                <div class="ps-mobile_text margin-bottom-x2">Двухэтажный подземный паркинг. Ввод в эксплуатацию в IV квартале 2021 г.</div>
+                <div class="ps-mobile_subtitle">Цена</div>
+                <div class="ps-mobile_text">Продажа</div>
+                <div class="ps-mobile_price margin-bottom">от 675 000 ₽</div>
+                <div class="ps-mobile_text">Аренда</div>
+                <div class="ps-mobile_price margin-bottom">от 7 500 ₽ в мес.</div>
+            </div>
+
+            <div class="ps-nav hide-mobile">
+                <select name="" id="" class="select-custom">
+                    <option value="1">Нижний этаж</option>
+                    <option value="2">Подземно-надземный паркинг2</option>
+                </select>
+                <div class="parking-floor">
+                    <span>Этаж</span>
+                    <a href="#" class="button small">-1</a>
+                    <a href="#" class="button small secondary bordered">-2</a>
+                </div>
+                <div class="section_colors section_colors-horizontal">
+                    <div class="s_color s_color-green">В продаже</div>
+                    <div class="s_color">Продано</div>
+                </div>
+            </div>
+
+            <div id="parking-select" class="rc-sections ps-sections hide-mobile">
+                <div class="drawing-block" data-drawing_block>
+                    <div id="rc_sections_drawing" class="drawing" data-drawing="" data-image="./img/parking/parking.jpg" data-items='[
+  {
+    "id": "1",
+    "name": "№194",
+    "nameType": "Место",
+    "nameTypeShort": "м.",
+    "position": {
+      "left": "27",
+      "top": "57"
+    },
+    "coords": "132,691 132,661 192,661 192,691",
+    "href": "#url1",
+    "area": "64,54",
+    "price": "3 645 000"
+  },
+   {
+    "id": "2",
+    "name": "№195",
+    "nameType": "Место",
+    "nameTypeShort": "м.",
+    "position": {
+      "left": "27",
+      "top": "57"
+    },
+    "coords": "652,595 652,565 712,565 712,595",
+    "href": "#url2",
+    "area": "64,54",
+    "price": "3 645 000"
+  },
+   {
+    "id": "3",
+    "name": "№196",
+    "nameType": "Место",
+    "nameTypeShort": "м.",
+    "position": {
+      "left": "27",
+      "top": "57"
+    },
+    "coords": "482,595 482,565 542,565 542,595",
+    "href": "#url3",
+    "area": "64,54",
+    "price": "3 645 000"
+  }
+]
+'></div>
+                </div>
+                <div class="move-button hide-desktop" data-move_button>
+                    <i class="icon icon-move"></i>
+                    Перемещайте план
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<div class="section">
+    <div class="container">
+        <div class="parking-gallery">
+            <h1>Изображение с увеличением</h1>
+            <a class="zoom-img" href="./img/parking/parking.jpg" data-fancybox>
+                <img src="./img/parking/parking.jpg" alt="">
+            </a>
+        </div>
+    </div>
+</div>
+
+
+
+<%= _.template(require('./../includes/footer.html').default)(data) %>

@@ -1,0 +1,271 @@
+.ro-cards {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin: 0 -12px;
+    @include mobile {
+        display: block;
+        white-space: nowrap;
+        font-size: 0;
+        margin-left: -17px;
+        margin-right: -17px;
+        padding-left: 17px;
+        padding-right: 17px;
+        flex-wrap: nowrap;
+        overflow: auto;
+    }
+    &.ro-cards__noscroll {
+        @include mobile {
+            display: block;
+            white-space: normal;
+            font-size: 0;
+            margin-left: -17px;
+            margin-right: -17px;
+            padding-left: 17px;
+            padding-right: 17px;
+            flex-wrap: wrap;
+            overflow: hidden;
+            .item {
+                width: 48%;
+                margin: 0 1%;
+                .content:before {
+                    content: "";
+                    display: block;
+                    float: left;
+                    padding-top: 72%;
+                }
+            }
+        }
+        @include only-mobile {
+            .item {
+                width: 100%;
+                margin: 0 0 20px;
+                .content:before {
+                    padding-top: 60%;
+                }
+            }
+        }
+    }
+    &.ro-cards-hover {
+        .item {
+            @include desktop {
+                &:hover {
+                    transform: translateY(-5px);
+                }
+            }
+        }
+    }
+
+    .item {
+        margin: 12px;
+        width: calc(33% - 24px);
+        transition: transform .2s ease;
+        text-decoration: none;
+
+        @include mobile {
+            display: inline-block;
+            margin-left: 0;
+            margin-right: 20px;
+            width: 260px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+
+        .content {
+            display: block;
+            position: relative;
+            margin: 0;
+            border-radius: 3px;
+            overflow: hidden;
+
+            &:before {
+                content: "";
+                display: block;
+                float: left;
+                padding-top: 76%;
+
+                &:before {
+                    padding-top: 67%;
+                }
+            }
+
+            .inner {
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+                flex-direction: column;
+                padding: 12px 0;
+                @include mobile {
+                    padding: 6px 0;
+                }
+            }
+        }
+
+        .bg {
+            display: inline-block;
+            width: 100%;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 3px;
+            &:before {
+                content: "";
+                display: block;
+                float: left;
+                padding-top: 51%;
+            }
+        }
+
+        .name {
+            margin: 0;
+            font-size: 24px;
+            line-height: 28px;
+            color: $colorText;
+            font-weight: 700;
+
+            @include desktop-small {
+                font-size: 20px;
+            }
+
+            @include mobile {
+                font-size: 20px;
+            }
+        }
+
+        .address {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            flex-wrap: wrap;
+            margin: 5px 0;
+            font-size: 14px;
+            line-height: 26px;
+            font-weight: 500;
+            color: $colorGray;
+            .round-icon {
+                margin-right: 7px;
+            }
+            @include mobile {
+                margin: 0;
+                font-size: 12px;
+                line-height: 14px;
+                font-weight: 500;
+            }
+        }
+        .text-red {
+            font-weight: bold;
+            font-size: 12px;
+            line-height: 26px;
+            text-decoration-line: underline;
+            color: #EF1B34;
+        }
+
+    }
+    @include desktop {
+        &.count-1,
+        &.count-2,
+        &.count-4 {
+            .item {
+                width: calc(50% - 24px);
+            }
+        }
+
+        &.count-3 {
+            .item {
+                width: calc(33% - 24px);
+            }
+        }
+
+        &.count-5 {
+            .item {
+                &:nth-child(4),
+                &:nth-child(5) {
+                    width: calc(50% - 24px);
+                }
+            }
+        }
+    }
+}
+.ro-cards-title {
+    color: $colorMain;
+    margin-bottom: 10px !important;
+}
+.ro-slider {
+    position: relative;
+    .slide {
+        width: 100%;
+        display: inline-block;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 3px;
+        &:before {
+            content: "";
+            display: block;
+            float: left;
+            padding-top: 45%;
+            @include tablet-mobile {
+                padding-top: 55%;
+            }
+        }
+    }
+    &-pagination {
+        display: block;
+        margin: 17px auto 0 auto;
+        text-align: center;
+    }
+    .ro-slider-button-prev {
+        left: -125px;
+    }
+    .ro-slider-button-next {
+        right: -125px;
+    }
+    @include desktop-small {
+        .ro-slider-button-prev {
+            left: -75px;
+        }
+        .ro-slider-button-next {
+            right: -75px;
+        }
+    }
+}
+
+.ro-info {
+    position: relative;
+    margin-bottom: 32px;
+    padding-left: 70px;
+    i {
+        position: absolute;
+        left: 0;
+        top: 0;
+        font-size: 35px;
+        color: $colorMain;
+    }
+    .title {
+        display: block;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 1;
+        color: $colorGray;
+    }
+    .text {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 26px;
+        color: $colorText;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    /*@include mobile {
+        padding-left: 0;
+        i {
+            display: none;
+        }
+    }*/
+    &.ro-info-without-icon {
+        padding-left: 0;
+    }
+}

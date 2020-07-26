@@ -1,0 +1,102 @@
+<% var data = {
+title: "Трансгруз"
+}; %>
+<%= _.template(require('./../includes/header.html').default)(data) %>
+
+
+<div class="section no-padding">
+    <div class="container">
+        <div class="breadcrumbs">
+            <a class="item link hide-desktop" href="#"><i class="icon icon-left-arrow-1"></i></a>
+            <a class="item link" href="#">Главная</a>
+            <div class="item divider hide-mobile"><i class="icon icon-right-arrow"></i></div>
+            <div class="item hide-mobile">Гаражи и паркинги</div>
+        </div>
+
+    </div>
+</div>
+<div class="section padding-top">
+    <div class="container">
+        <div class="caption">
+            <h1 class="h3">Гаражи и паркинги</h1>
+        </div>
+        <div class="rc-cards rc-cards__noscroll margin-top-x2 count-3">
+            <a href="#" class="item effect-white">
+                <div class="content ">
+                    <div class="inner">
+                        <div class="top">
+                            <div class="name">ЖК «Центральный»</div>
+                            <div class="address">
+                                <div class="round-icon smallest hide-mobile">
+                                    <div class="icon icon-map"></div>
+                                </div>
+                                Московское шоссе / ул. Авроры
+                            </div>
+                        </div>
+                        <div class="bottom">
+                            <div class="button inline">247 машиномест</div>
+                        </div>
+                    </div>
+                    <div class="bg lazy" data-src="./img/residential-complex/tsentralniy.jpg" style="background-image: url('./img/residential-complex/tsentralniy.jpg')"></div>
+                </div>
+                <div class="effect-stripe "></div>
+            </a>
+            <a href="#" class="item effect-white ">
+                <div class="content  ">
+                    <div class="inner">
+                        <div class="top">
+                            <div class="name">ЖК «Академический»</div>
+                            <div class="address">
+                                <div class="round-icon smallest hide-mobile">
+                                    <div class="icon icon-map"></div>
+                                </div>
+                                Московское шоссе / ул. Авроры
+                            </div>
+                        </div>
+                        <div class="bottom">
+                            <div class="button inline">110 машиномест</div>
+                        </div>
+                    </div>
+                    <div class="bg lazy" data-src="./img/residential-complex/akademicheskiy.jpg" style="background-image: url('./img/residential-complex/akademicheskiy.jpg')"></div>
+                </div>
+                <div class="effect-stripe "></div>
+            </a>
+            <a href="#" class="item effect-white ">
+                <div class="content ">
+                    <div class="inner">
+                        <div class="top">
+                            <div class="name">ЖК «120 квартал»</div>
+                            <div class="address">
+                                <div class="round-icon smallest hide-mobile">
+                                    <div class="icon icon-map"></div>
+                                </div>
+                                Московское шоссе / ул. Авроры
+                            </div>
+                        </div>
+                        <div class="bottom">
+                            <div class="button inline">350 машиномест</div>
+                        </div>
+                    </div>
+                    <div class="bg lazy" data-src="./img/residential-complex/kvartal120.jpg" style="background-image: url('./img/residential-complex/kvartal120.jpg')"></div>
+                </div>
+                <div class="effect-stripe "></div>
+            </a>
+        </div>
+    </div>
+</div>
+
+<div class="section no-padding-top">
+    <div class="container">
+        <div class="caption">
+            <h3 class="h6">SEO текст</h3>
+        </div>
+        <p class="color-text-gray">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tristique placerat justo a aliquet. Proin pharetra consequat massa, nec euismod nulla gravida et. Aenean ut nibh aliquet, vestibulum mi sit amet, congue lectus. Nullam pulvinar, purus sed euismod eleifend, urna erat accumsan lacus, vel molestie arcu nunc ac dolor.
+        </p>
+        <p class="color-text-gray">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tristique placerat justo a aliquet. Proin pharetra consequat massa, nec euismod nulla gravida et. Aenean ut nibh aliquet, vestibulum mi sit amet, congue lectus. Nullam pulvinar, purus sed euismod eleifend, urna erat accumsan lacus, vel molestie arcu nunc ac dolor.
+        </p>
+    </div>
+</div>
+
+<%= _.template(require('./../includes/footer.html').default)(data) %>

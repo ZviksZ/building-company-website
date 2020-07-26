@@ -1,0 +1,260 @@
+.parking-section {
+    position: relative;
+    .ps-sections {
+        background: $colorWhite;
+        .drawing-block:before {
+            content: "";
+            display: block;
+            float: left;
+            padding-top: 72%;
+        }
+    }
+    .ps-nav {
+        display: flex;
+        align-items: center;
+        .section_colors {
+            margin-left: auto;
+        }
+        .parking-floor {
+            display: flex;
+            align-items: center;
+            span {
+                display: inline-block;
+                font-weight: bold;
+                font-size: 20px;
+                line-height: 24px;
+                color: $colorText;
+                margin-right: 20px;
+            }
+            .button {
+                margin-right: 15px;
+            }
+        }
+        .s_color {
+            margin-bottom: 0;
+        }
+        @include mobile {
+            flex-wrap: wrap;
+        }
+    }
+    .ps-mobile {
+        &_text{
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 26px;
+            color: $colorGray;
+            margin-bottom: 5px;
+        }
+        &_subtitle {
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 26px;
+            color: $colorMain;
+            margin-bottom: 8px;
+        }
+        &_price {
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 26px;
+            color: $colorText;
+        }
+    }
+}
+
+.choices.choices-parking {
+    min-width: 400px;
+    margin-bottom: 0;
+    margin-right: 24px;
+    @include only-mobile {
+        min-width: 300px;
+    }
+    .choices__inner {
+        background-color: $colorWhite;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 24px;
+        color: $colorText;
+        border: 1px solid $colorGrayMiddle;
+        box-sizing: border-box;
+        border-radius: 20px;
+        padding: 10px 15px !important;
+        z-index: 9999;
+        position: relative;
+        .choices__list--single {
+            padding: 0 50px 0 0;
+        }
+    }
+
+    .choices__list--dropdown {
+        top: 0;
+        z-index: 999;
+        background: $colorGrayLight;
+        padding-top: 60px;
+        border-radius: 20px;
+        border: 0;
+        .choices__item {
+            padding-left: 15px;
+            padding-right: 50px;
+            font-weight: bold;
+            font-size: 20px;
+            line-height: 24px;
+            color: $colorText;
+            word-break: break-word;
+            &:hover {
+                background: darken($colorGrayLight, 5%);
+            }
+            &.is-selected {
+                &:after{
+                    display: block;
+                    width: 19px;
+                    height: 13px;
+                    opacity: 1;
+                    content: '';
+                    background: url("../img/checked.svg") center center no-repeat;
+                    -webkit-background-size: contain;
+                    background-size: contain;
+                }
+            }
+        }
+    }
+    &[data-type*=select-one] {
+        &:after{
+            z-index: 9999;
+            content: "\68";
+            color: $colorGray;
+            border: 0;
+            font-size: 12px;
+            width: 12px;
+            height: 12px;
+            margin-top: -6px;
+        }
+        &.is-open {
+            &:after {
+                margin-top: -6px;
+                transform: rotate(180deg);
+            }
+        }
+
+
+    }
+    @include mobile {
+        .choices__list--dropdown .choices__item.is-selected:after {
+            position: absolute;
+            right: 4px;
+            top: 20px;
+        }
+        .choices.choices-parking .choices__list--dropdown .choices__item {
+            padding-left: 15px;
+            padding-right: 50px;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 20px;
+            color: #222;
+            white-space: nowrap;
+        }
+        .choices.choices-parking .choices__inner {
+            font-size: 16px;
+            line-height: 20px;
+        }
+    }
+}
+
+
+.parking-content {
+    display: flex;
+    margin-top: 50px;
+    .parking-img-wrap {
+        position: relative;
+        display: inline-block;
+        width: 66%;
+        height: 720px;
+        padding: 25px 4%;
+        background: #F3F3F3;
+        border-radius: 19px;
+        text-decoration: none;
+        .round-icon {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            z-index: 55;
+        }
+        .parking-img {
+            position: relative;
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            &:before {
+                content: "";
+                display: block;
+                float: left;
+                padding-top: 72%;
+            }
+        }
+    }
+    .parking-info-wrap {
+        width: 33%;
+        padding: 0 24px;
+        .parking-info_title {
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 28px;
+            color: $colorMain;
+            margin-bottom: 6px;
+        }
+        .parking-info_text {
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 26px;
+            color: $colorTextGray;
+            margin-bottom: 5px;
+        }
+        .parking-info_price {
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 26px;
+            color: $colorText;
+            margin-bottom: 17px;
+        }
+        @include mobile {
+            .parking-info_title {
+                font-weight: bold;
+                font-size: 18px;
+                line-height: 26px;
+                color: $colorMain;
+                margin-bottom: 6px;
+            }
+            .parking-info_text {
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 26px;
+                color: $colorTextGray;
+                margin-bottom: 5px;
+            }
+            .parking-info_price {
+                font-weight: bold;
+                font-size: 18px;
+                line-height: 26px;
+                color: $colorText;
+                margin-bottom: 17px;
+            }
+        }
+    }
+    @include mobile {
+        flex-wrap: wrap;
+        margin-top: 20px;
+        .parking-info-wrap {
+            width: 100%;
+            padding-left: 0;
+        }
+        .parking-img-wrap {
+            width: 100%;
+            margin-bottom: 40px;
+            height: auto;
+        }
+    }
+}
+
+

@@ -1,0 +1,49 @@
+<% var data = {
+title: "Трансгруз"
+}; %>
+<%= _.template(require('./../includes/header.html').default)(data) %>
+
+<div class="section no-padding">
+    <div class="container">
+        <div class="breadcrumbs">
+            <a class="item link hide-desktop" href="#"><i class="icon icon-left-arrow-1"></i></a>
+            <a class="item link " href="#">Главная</a>
+
+            <div class="item divider hide-mobile"><i class="icon icon-right-arrow"></i></div>
+            <div class="item hide-mobile">Подбор квартиры</div>
+        </div>
+    </div>
+</div>
+
+<div class="section no-padding">
+    <div class="container">
+        <div class="rc-about-project">
+            <div class="info">
+                <h1 class="h3">Подбор квартиры</h1>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="section no-padding-top">
+    <div class="container">
+        <div id="apartments_search"
+             data-json='{"apartments":[{"id":0,"name":2,"number":248,"jkId":1,"jkName":"ЖК Центральный","deadline":"IV кв. 2020 г.","section":17,"floor":12,"url":"#","img":"./img/apartments/room.png","fullPrice":3045000,"squarePrice":65000,"area":67.55},{"id":1,"name":2,"number":248,"jkId":1,"jkName":"ЖК Центральный","deadline":"IV кв. 2020 г.","section":17,"floor":12,"url":"#","img":"./img/apartments/room.png","fullPrice":4045000,"squarePrice":65000,"area":67.55},{"id":2,"name":2,"number":248,"jkId":2,"jkName":"ЖК Центральный","deadline":"IV кв. 2020 г.","section":17,"floor":12,"url":"#","img":"./img/apartments/room.png","fullPrice":5045000,"squarePrice":65000,"area":67.55},{"id":3,"name":2,"number":248,"jkId":1,"jkName":"ЖК Центральный","deadline":"IV кв. 2020 г.","section":17,"floor":12,"url":"#","img":"./img/apartments/room.png","fullPrice":3045000,"squarePrice":65000,"area":67.55},{"id":4,"name":2,"number":248,"jkId":2,"jkName":"ЖК Центральный","deadline":"IV кв. 2020 г.","section":17,"floor":12,"url":"#","img":"./img/apartments/room.png","fullPrice":2045000,"squarePrice":65000,"area":67.55},{"id":5,"name":2,"jkId":1,"number":248,"jkName":"ЖК Центральный","deadline":"IV кв. 2020 г.","section":17,"floor":12,"url":"#","img":"./img/apartments/room.png","fullPrice":3045000,"squarePrice":65000,"area":67.55},{"id":6,"name":2,"number":248,"jkId":2,"jkName":"ЖК Центральный","deadline":"IV кв. 2020 г.","section":17,"floor":12,"url":"#","img":"./img/apartments/room.png","fullPrice":1045000,"squarePrice":65000,"area":67.55}]}'>
+            <div class="apartments-filter-toggle hide-desktop">
+                <div class="name">Фильтр</div>
+                <a href="#" class="button button-icon" target="_blank">
+                    <i class="icon icon-settings"></i>
+                </a>
+            </div>
+            <div class="apartments-wrapper">
+                <div class="wrapper" data-apartments-wrapper>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<%= _.template(require('./../includes/footer.html').default)(data) %>
